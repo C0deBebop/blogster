@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <title>Blogster</title>
+     <link rel="stylesheet" href="https://use.typekit.net/ggw6gqm.css">
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/newsprint.css') }}" id="styleSheet">
+   </head>
+   <body>
+    {% block content %}{% endblock %}
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+   </body>
+ </html>

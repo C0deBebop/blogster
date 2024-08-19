@@ -1,0 +1,218 @@
+/*
+
+font-family: "azo-sans-web", sans-serif;
+font-weight: 900;
+font-style: normal;
+
+font-family: "azo-sans-uber", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: "nimbus-sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+color
+-------------------------
+
+blk: #080808
+light gray: #B9B8B8
+newsprint bubble button: #C9C9C9
+
+*/
+
+
+:root {
+--primaryColor: #A09A9A;
+--secondaryColor: #837E7E;
+--tertiaryColor: #6A6A6A;
+--primaryFont: "nimbus-sans", sans-serif;
+--secondaryFont: "azo-sans-uber", sans-serif;
+--largeHeaderSize: 120em;
+--smallerHeaderSize: 1.4em;
+--bodyTextSize:  0.9em;
+--buttonBkgdColor: #575757;
+--buttonColor: #FDF6ED;
+--buttonFont: "nimbus-sans", sans-serif;
+--buttonFontSize: 1.2em;
+}
+
+* {
+padding: 0;
+margin: 0;
+}
+
+html {
+box-sizing: border-box;
+}
+
+body {
+background: #EAEAEA;    
+}
+
+.flex-container {
+display: flex;
+flex-direction: row;
+width: 100%;
+}
+
+.left-column, .right-column  {
+width: 50%; 
+height: 70vh;  
+padding: 8%;
+justify-items: center;   
+}
+
+.right-column  { 
+padding: 0;
+height: 99vh;  
+}
+
+.left-column h1 {
+font: normal 300 10em var(--secondaryFont);
+color: #080808;
+}
+
+.left-column h2 {
+font: normal 300 8em var(--primaryFont);
+color: #080808;    
+}
+
+.left-column span:first-of-type {    
+color: #B9B8B8;
+}
+
+.left-column span:last-of-type {
+color: var(--tertiaryColor);
+}
+
+.left-column button {
+background: var(--buttonBkgdColor);
+font: normal 300 0.9em var(--primaryFont);
+width: 300px;
+height: 80px;
+border-radius: 25px;
+border: none;
+color: #FDF6ED;
+margin-top: 50px;
+cursor: pointer;
+}
+
+.right-column .theme-switcher {
+border-radius: 25px;
+width: 200px;
+height: auto;
+background: #fff;
+float: right;
+margin: 50px 75px 0 0;
+padding: 10px 0;
+}
+
+.theme-switcher span {
+ font: normal 500 0.9em var(--primaryFont);   
+ color: var(--buttonBkgdColor);    
+ display: inline-block;
+ margin: 0 10px 0 20px;
+position: relative;
+top: -3px;
+}
+
+.theme-switcher div {
+display: inline-block;    
+border-radius: 50%;
+border: 1px solid #B9B8B8;
+width: 15px;
+height: 15px; 
+background: #fff;
+text-align: center;
+margin-top: 5px;
+cursor: pointer;
+}
+
+.right-column .theme-switcher .newsprint {   
+background: #C9C9C9;
+}
+
+.posts-content h6 {
+font: normal 400 1.2em "azo-sans-web", sans-serif;;
+color: var(--secondaryColor);
+text-decoration: underline;
+margin: 15px 0;
+}
+
+.post-container h5 {
+font: normal 400 1em "azo-sans-web", sans-serif;
+color: var(--secondaryColor);
+text-decoration: underline;
+margin: 15px 0;
+}
+
+.posts-content {
+width: 95%;    
+margin-top: 175px;
+}
+
+.post-flex-container {
+display: flex;
+flex-direction: column;
+justify-content: space-between;   
+border-bottom: 1px solid #C9C1C1;
+}
+
+.post {
+display: flex;
+flex-direction: row;
+justify-content: space-between; 
+margin: 25px 0;    
+width: 100%;
+}
+
+.post:nth-child(n+2) {
+width: 100%;    
+}
+
+.post div:first-of-type {
+ width: 25px !important;    
+}
+
+.post:nth-child(n+2) > div:nth-child(2), 
+.post div:nth-child(2),
+.post div:nth-child(4), 
+.post div:nth-child(6) {
+width: 70%;
+}
+
+
+.post:nth-child(n+2) h4, .post h4  {
+font: normal 1.4em var(--secondaryFont);
+color: var(--buttonBkgdColor);
+}
+
+.post:nth-child(n+2) p {
+font: normal 0.9em var(--primaryFont);
+}
+
+.post div p:nth-child(1) {
+font: normal 500 0.9em var(--primaryFont);    
+color: #080808;
+margin-right: 15px;
+}
+
+.post div p:nth-child(2) {
+font: normal 400 0.9em var(--primaryFont);    
+color: var(--primaryColor);
+}
+
+.viewmore {
+font: normal 900 1.2em var(--primaryFont);    
+color: #080808; 
+display: block; 
+margin: 5px 0 20px 30px;
+font-variant: small-caps;
+text-transform: lowercase;
+text-align: left;
+}
+
+
+
