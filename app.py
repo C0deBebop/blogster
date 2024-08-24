@@ -19,11 +19,11 @@ def signin():
     print(request.get_json(force=True))
     return {'status' : 200}
 
+@app.route('/blog/<int:post_id>')
+def view_post(post_id: int):
+    pass
 
-
-
-
-
+#@app.route('/')
 
 
 if __name__ == '__main__':
